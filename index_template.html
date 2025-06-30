@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-item">
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="page-padding container">
+        <div class="main-container">
+            <div class="container-row">
+                <!-- Card -->
+                {% if name %}
+                <div class="card">
+                    <div class="container">
+                        <!-- Headshot -->
+                        <div class="container">
+                            {% if headshot %}
+                            <img src="{{ headshot | safe}}" alt="headshot" class="headshot">
+                            {% endif %}
+                        </div>
+                        {% if social_links %}
+                        <div class="card-links">
+                            {% for link in social_links %}
+                            <div class="card-link">
+                                <a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}">
+                                {% if link.svg_path %}
+                                <img src="{{ link.svg_path | safe}}" alt="icon" class="card-icon"/>
+                                {% endif %}
+                                </a>
+                            </div>
+                        {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="container">
+                        <div class="card-title">
+                            <h2>{{ name }}</h2>
+                            <h3>{{ contact.location }}</h3>
+                        </div>
+                        <p>{{ summary.data }}</p>
+                        <p>{{ summary.music }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+                <!-- Work Experience -->
+                {% if work_experience %}
+                <section>
+                    <h2 class="section-heading">Work Experience</h2>
+                    {% for job in work_experience %}
+                    <section>
+                        <!-- Company URL/Name -->
+                        <h3>
+                            {% if job.url %}
+                                {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
+                            {% else %}
+                                {{ job.position }} at {{ job.company }}
+                            {% endif %}
+                        </h3>
+                        {% if job.summary %}
+                        <p>{{ job.summary }}</p>
+                        {% endif %}
+                        <!-- Start - End Date -->
+                        {% if job.start_date and job.end_date %}
+                            <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
+                        {% endif %}
+                        <!-- Highlights -->
+                        {% if job.highlights %}
+                            <ul>
+                                {% for highlight in job.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                <!-- Projects -->
+                {% if projects %}
+                <section>
+                    <h2 class="section-heading">Projects</h2>
+                    {% for project in projects %}
+                    <section>
+                        <!-- Project URL/Title -->
+                        <h3>
+                            {% if project.url %}
+                            <a href="{{ project.url }}">{{ project.title }}</a>
+                            {% else %}
+                                {{ project.title }}
+                            {% endif %}
+                        </h3>
+                        <!-- Project Summary and Highlights -->
+                        {% if project.summary %}<p>{{ project.summary }}</p>{% endif %}
+                        {% if project.highlights %}
+                            <ul>
+                                {% for highlights in project.highlights %}<li>{{ highlight }}</li>{% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                <!-- Volunteer Experience -->
+                {% if volunteer_experience %}
+                <section>
+                    <h2 class="section-heading">Volunteer Experience</h2>
+                    {% for ve in volunteer_experience %}
+                    <section>
+                        <h3>
+                            {% if ve.url %}
+                            <a href="{{ ve.url }}">{{ ve.company }}</a>
+                            {% else %}
+                                {{ ve.company }}
+                            {% endif %}
+                        </h3>
+
+                        {% if ve.start_date and ve.end_date %}
+                        <p class="section-label">{{ ve.start_date }} - {{ ve.end_date }}</p>
+                        {% endif %}
+
+                        {% if ve.summary %}
+                        <p>{{ ve.summary }}</p>
+                        {% endif %}
+
+                        {% if ve.highlights %}
+                        <ul>
+                            {% for highlights in ve.highlights %}<li>{{ highglight }}</li>{% endfor %}
+                        </ul>
+                        {% endif %}
+                    </section>
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                <!-- Skills -->
+                {% if skills %}
+                <section>
+                    <h2 class="section-heading">Skills</h2>
+                    {% for skill_type, skill_list in skills.items() %}
+                    <h3 class="section-label">{{ skill_type.title()|replace("_", " ")  }}</h3>
+                    <ul>
+                        {% for skill in skill_list %}
+                        <li>{{ skill.capitalize() }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endfor %}
+                </section>
+                {% endif %}
+
+                <!-- Education -->
+                {% if education %}
+                <section>
+                    <h2 class="section-heading">Education</h2>
+                    {% for school in education %}
+                    <section>
+                        <h3>
+                            {% if school.url %}
+                                <a href="{{ school.url }}">{{ school.institution }}</a>
+                            {% else %}
+                                <p>{{ school.institution }}</p>
+                            {% endif %}
+                        </h3>
+                        {% if school.location %}
+                            <p>{{ school.location }}</p>
+                        {% endif %}
+                        {% if school.degrees %}
+                            <p>{{ school.degree }}</p>
+                        {% endif %}
+                        {% if concentration %}<p>{{ concentration }}</p>{% endif %}
+                        {% if classes %}
+                            <ul>
+                                {% for class in classes %}<li>{{ class }}</li>{% endfor %}
+                            </ul>
+                        {% endif %}
+                    </section>
+                    {% endfor %}
+                </section>
+                {% endif %}
+        </div>
+    </div>
+</body>
+</html>

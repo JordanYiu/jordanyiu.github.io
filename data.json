@@ -1,0 +1,227 @@
+{
+    "name": "Jordan Y.",
+    "headshot": "src/img/photos/headshot.jpg",
+    "contact": {
+        "email": "yiu.work@proton.me",
+        "location": "New Jersey/South Delaware",
+        "svg_path": "src/img/icons/email.svg"
+    },
+    "summary": {
+        "data": "Data Analyst experienced in data engineering, analysis, modeling (statistical and data), and application development. Problem solver and self-starter.",
+        "music": "Musician experienced in playing live music for orhcestra, musical pits, and private events. Music teacher with over 10 years experience teaching students of all skill levels, ranging from beginner and up to performing at Lincoln Center. I believe good learning is good self-teaching."
+    },
+
+    "social_links": [
+        {
+            "label": "Personal Website",
+            "url": "https://jordanyiu.github.io",
+            "svg_path": "src/img/icons/globe.svg"
+        },
+        {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/jordan-yiu-datacello27/",
+            "svg_path": "src/img/icons/linkedin.svg"
+        },
+        {
+            "label": "Github",
+            "url": "https://github.com/JordanYiu",
+            "svg_path": "src/img/icons/github.svg"
+        }
+    ],
+
+    "work_experience": [
+        {
+            "company": "Rutgers - Mason Gross School of the Arts",
+            "position": "Research Assistant/Analyst",
+            "url": "https://www.masongross.rutgers.edu/mgsa-receives-largest-ever-gift/",
+            "start_date": "03/01/2025",
+            "end_date": "Present",
+            "summary": "Design, model, and deploy a database of schools across the United States for researchers to use in data analysis and survey design. ETL data from various public sources and develop processing layers. Interface with end-users to collect feedback to improve functionality and operations of the database.",
+            "highlights": [
+                "Deploy database of schools across the United States.",
+                "ETL data for use in survey-design, applications, and analysis in research studies."
+            ]
+        },
+        {
+            "company": "Penn Medicine",
+            "position": "Data Analyst",
+            "url": "https://www.pennmedicine.org/",
+            "start_date": "07/01/2022",
+            "end_date": "06/30/2024",
+            "summary": "Act as a consultant on assignments across Penn Medicine and the wider University of Pennsylvania for the Director of Business Development's Office",
+            "highlights": [
+                "Analyze data for the Environmental Innovations Initiative's Faculty Database. Credited under \"Acknowledgements\".",
+                "Process contact information to generate an invite list to Ambramson Cancer Center's Cellicon Valley 2023.",
+                "Identify collaborative business or research opportunities, create supporting documentation for tenure applications, and improve operations related to research."
+            ]
+        },
+        {
+            "company": "Self-employed/Freelance",
+            "position": "Musician and Music Teacher",
+            "url": "https://jordanyiu.github.io/#",
+            "start_date": "01/14/2014",
+            "end_date": "Present",
+            "summary": "Music teacher of cello, violin, viola, and piano throughout Central and parts of North New Jersey. Active musician for orchestras, small ensembles, musical pits, recordings, and private events ",
+            "highlights": [
+                "Brook Arts Center (Brook Orchestra and Brook Arts Center Community Players)",
+                "Algonquin Arts Theatre",
+                "Count Basie Center for the Arts",
+                "Spring Lake Theatre"
+            ]
+        }
+    ],
+    "volunteer_experience": [
+        {
+            "company": "Southern Delaware Orchestra",
+            "position": "Data Manager (CRM)",
+            "url": "https://www.sodelomusic.org",
+            "start_date": "06/04/2024",
+            "end_date": "12/01/2024",
+            "summary": "Maintain records for donor and CRM, process financial data via scripts and various platforms (HubSpot, GiveButter). Conduct analysis of spreadsheets/CSV in Jupyter Notebooks"
+        }
+    ],
+    "skills": {
+        "computing": [
+            "Python",
+            "SQL",
+            "Bash",
+            "Git",
+            "Godot"
+        ],
+        "music_performance (Cello)": [
+            "Orchestral",
+            "Chamber",
+            "Theatre Pit",
+            "Opera Pit",
+            "Studio Sessions"
+        ],
+        "music_education": [
+            "Classroom Teaching (Clinical Experience)",
+            "Lesson Plan Writing",
+            "Private Lessons/Classes on Instrumental Technique (Cello, Violin, Viola, and Piano)",
+            "Chamber Coaching"
+        ]
+    },
+    "education": [
+        {
+            "institution": "Rutgers - School of Communication and Information",
+            "location": "New Brunswick, New Jersey",
+            "url": "https://comminfo.rutgers.edu/graduate-programs/master-information/concentrations/data-science",
+            "year": 2024,
+            "degree": "Master of Information",
+            "concentration": "Data Science",
+            "classes": [
+                    "Machine Learning",
+                    "Problem Solving with Data",
+                    "Data Visualization"
+                ]
+        },
+        {
+            "institution": "Rutgers - Mason Gross School of the Arts",
+            "location": "New Brunswick, New Jersey",
+            "url": "https://www.masongross.rutgers.edu/degrees-programs/music/",
+            "year": 2020,
+            "degree": "Bachelor of Arts",
+            "concentration": "Music Education and Music Performance",
+            "classes": [
+                    "Rutgers Symphony Orchestra",
+                    "Rutgers Sinfonia",
+                    "Rutgers University String Ensemble (RUSE)",
+                    "Seminar: Brahms' Symphonies"
+                ]
+        }
+    ],
+    "music": {
+        "venues": [ 
+            {
+                "Brook Arts Center": {
+                    "Brook Orchestra": {
+                        "2019 - 2020 Season": {
+                            "Beethoven, Ludwig v.": ["Coriolan Overture"],
+                            "Bizet, Georges": ["Carmen Suite No. 1"],
+                            "Schubert, Franz": ["Symphony No. 8"]
+                        },
+                        "2021 - 2022 Season": {
+                            "Borodin, Alexander": ["Symphony No. 2"],
+                            "Debussy, Claude": ["Petit Suite"],
+                            "Rimsky-Korsakov, Nikolai": ["Symphony No. 1 in E Minor"],
+                            "Rossini, Gioachino": ["William Tell Overture", "Barber of Seville Overture"],
+                            "Strauss, Johann II": ["Die Fledermaus Overture"],
+                            "Tchaikovsky, Pyotr Ilyich": ["Symphony No. 5 in E Minor"]
+                        },
+                        "2022 - 2023 Season": {
+                            "Anderson, Leroy": ["Christmas Festival", "Sleigh Ride"],
+                            "Beethoven, Ludwig v.": ["Symphony No. 1 in C Major", "Symphony No. 3 in Eb Major (\"Eroica\")"],
+                            "Brahms, Johannes": ["Symphony No. 2 in D Major"],
+                            "Debussy, Claude": ["Children's Corner (Caplet)", "Prelude to the Afternoon of a Faun (Prélude à l'Après-midi d'un faune)"],
+                            "Schubert, Franz": ["Marche Militaire"],
+                            "Schugar, Adam": ["Hanukkah Overture"],
+                            "Sibelius, Jean": ["Karelia Suite", "Finlandia"],
+                            "Strauss, Johann II": ["Kaiser-Walzer (Emperor Waltz)"],
+                            "Tchaikovsky, Pyotr Ilyic": ["Marche Slave", "Nutcracker Suite"],
+                            "Verdi, Giuseppe": ["Nabucco Overture"]
+                        },
+                        "2023-2024 Season": {
+                            "Anderson, Leroy": ["Bugler's Holiday"],
+                            "Beethoven, Ludwig v.": ["Egmont Overture", "Symphony No. 5 in C Minor", "Symphony No. 7"],
+                            "Borodin, Alexander": ["In the Steppes of Central Asia"],
+                            "Bizet, Georges": ["Carmen Suite No. 2"],
+                            "Brahms, Johannes": ["Academic Festival Overture", "Symphony No. 1 in C Minor"],
+                            "Bruch, Max": ["Concerto for Clarinet and Viola"],
+                            "Elgar, Edward": ["Imperial March"],
+                            "Mendelssohn, Felix": ["The Hebrides Overture"],
+                            "Prokofiev, Sergei": ["Peter and the Wolf"],
+                            "Saint-Saens": ["Cello Concerto No. 1", "Danse Bacchanale from Samson et Dalila"],
+                            "Schumann, Robert": ["Symphony No. 3 'Rhenish'"],
+                            "Strauss, Johann II": ["The Blue Danube"],
+                            "Tchaikovsky, Pyotr Ilyich": ["Nutcracker Suite", "Sleeping Beauty Waltz"],
+                            "Williams, Ralph Vaughan": ["English Folk Song Suite"],
+                            "Verdi, Giuseppe": ["Nabucco Overture"]
+                        },
+                        "2024 - 2025 Season": {
+                            "Anderson, Leroy": ["Bugler's Holiday"],
+                            "Bernstein, Leonard": ["Candide Overture"],
+                            "Dvorak, Antonin": ["Symphony No. 8 in D Minor"],
+                            "Francois Borne": ["Fantasy Billante Sur 'Carmen'"],
+                            "Jean Sibelius": ["Symphony No. 1"],
+                            "Mendelssohn, Felix": ["Symphony No. 5 in D Major/D Minor"],
+                            "Tchaikovsky, Pyotr Ilyich": ["Romeo and Juliet"],
+                            "Weber, Carl Maria von ": ["Concerto for Basson in F Major"]
+                        }
+                    },
+                    "Brook Arts Center Community Players": {
+                        "American Idiot": 2024,
+                        "Cabaret": 2023,
+                        "Guys and Dolls": 2022,
+                        "Seussical": 2022,
+                        "Spring Awakening": 2024
+                    }
+                }
+            },
+            {
+                "The Barn Theatre": [
+                    {
+                        "Bright Star": 2025
+                    }
+                ]
+            },
+            {
+                "Algonquin Arts Theatre": [ 
+                    {
+                        "Elf": 2023,
+                        "Fiddler on the Roof": 2024,
+                        "Joseph and the Technicolor Dreamcoat": 2024
+                    }
+                ]
+            },
+            {
+                "Count Basie Center for the Performing Arts": [
+                    {
+                        "Into the Woods": 2021,
+                        "A Christmas Carol": 2022
+                    }
+                ]
+            }
+        ]
+    }
+}
