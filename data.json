@@ -1,14 +1,15 @@
 {
     "name": "Jordan Y.",
     "headshot": "src/img/photos/headshot.jpg",
+    "resume": "src/YiuJordan_Resume_Large.pdf",
     "contact": {
         "email": "yiu.work@proton.me",
         "location": "New Jersey/South Delaware",
-        "svg_path": "src/img/icons/email.svg"
+        "svg_path": "jordanyiu.github.io/src/img/icons/email.svg"
     },
     "summary": {
         "data": "Data Analyst experienced in data engineering, analysis, modeling (statistical and data), and application development. Problem solver and self-starter.",
-        "music": "Musician experienced in playing live music for orhcestra, musical pits, and private events. Music teacher with over 10 years experience teaching students of all skill levels, ranging from beginner and up to performing at Lincoln Center. I believe good learning is good self-teaching."
+        "music": "Musician experienced in playing live music for orhcestra, musical pits, and private events. Music teacher with over 10 years experience teaching students of all skill levels, ranging from beginner and up to performing at Lincoln Center."
     },
 
     "social_links": [
@@ -199,10 +200,8 @@
                 }
             },
             {
-                "The Barn Theatre": [
-                    {
-                        "Bright Star": 2025
-                    }
+                "Lincoln Center - Alice Tully Hall": [
+                    "Johannes Brahms - Requiem"
                 ]
             },
             {
@@ -219,6 +218,13 @@
                     {
                         "Into the Woods": 2021,
                         "A Christmas Carol": 2022
+                    }
+                ]
+            },
+            {
+                "The Barn Theatre": [
+                    {
+                        "Bright Star": 2025
                     }
                 ]
             }

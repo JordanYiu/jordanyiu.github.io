@@ -16,19 +16,20 @@ if 'social_links' in data:
 
 env = Environment(loader=FileSystemLoader("."), autoescape=True)
 index_template =  env.get_template("index_template.html")
-music_template = env.get_template('music_template.html')
+# music_template = env.get_template('music_template.html')
 # resume_template = env.get_template("resume_template.html")
 
 # Pages to render
 html_output = index_template.render(**data)
-music_output = music_template.render(**data)
+# music_output = music_template.render(**data)
 # resume_output = resume_template.render(**data)
 
+# My site
 with Path("index.html").open("w", encoding="utf-8") as f:
     f.write(html_output)
 
-with Path("music.html").open("w", encoding="utf-8") as f:
-    f.write(music_output)
+# with Path("jordanyiu.github.io/music.html").open("w", encoding="utf-8") as f:
+#     f.write(music_output)
 
 # with Path("resume.html").open("w", encoding="utf-8") as f:
 #     f.write(resume_output)
