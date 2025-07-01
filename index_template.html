@@ -1,45 +1,48 @@
 {% extends "base.html" %}
-{% block title %}Jordan Y.{% endblock %}
+{% block title %}Jordan Yiu{% endblock %}
 
 {% block content %}
     <!-- Main Content -->
-    <div class="container-row">
         <!-- Card -->
         {% if name %}
-        <div class="card">
-            <div class="container">
-                <!-- Headshot -->
-                <div class="container">
-                    {% if headshot %}
-                    <img src="{{ headshot | safe}}" alt="headshot" class="headshot">
-                    {% endif %}
-                </div>
-                {% if social_links %}
-                <div class="card-links">
-                    {% for link in social_links %}
-                    <div class="card-link">
-                        <a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}">
-                        {% if link.svg_path %}
-                        <img src="{{ link.svg_path | safe}}" alt="icon" class="card-icon"/>
+        <section>
+            <div class="container-row">
+                <section>
+                    <div class="container">
+                        <!-- Headshot -->
+                        <div class="container">
+                            {% if headshot %}
+                            <img src="{{ headshot | safe}}" alt="headshot" class="headshot">
+                            {% endif %}
+                        </div>
+                        {% if social_links %}
+                        <div class="card-links">
+                            {% for link in social_links %}
+                            <div class="card-link">
+                                <a href="{{ link.url }}" rel="noopener noreferrer" aria-label="{{ link.label }}">
+                                    {% if link.svg_path %}
+                                    <img src="{{ link.svg_path | safe}}" alt="icon" class="card-icon"/>
+                                    {% endif %}
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
                         {% endif %}
-                        </a>
                     </div>
-                {% endfor %}
-                </div>
-                {% endif %}
+                    <div class="container card-title">
+                        <h2>{{ name }}</h2>
+                        <h3>{{ contact.location }}</h3>
+                    </div>
+                </section>
+                <section>
+                    <div class="container">
+                        <p>{{ summary.data }}</p>
+                        <p>{{ summary.music }}</p>
+                    </div>
+                </section>
             </div>
-            
-            <div class="container">
-                <div class="card-title">
-                    <h2>{{ name }}</h2>
-                    <h3>{{ contact.location }}</h3>
-                </div>
-                <p>{{ summary.data }}</p>
-                <p>{{ summary.music }}</p>
-            </div>
-        </div>
-        {% endif %}
-    </div>
+            {% endif %}
+        </section>
 
     <div class="container">
         <!-- Work Experience -->
@@ -50,19 +53,15 @@
             <section>
                 <!-- Company URL/Name -->
                 <h3>
-                    {% if job.url %}
-                        {{ job.position }} at <a href="{{ job.url }}">{{ job.company }}</a>
-                    {% else %}
-                        {{ job.position }} at {{ job.company }}
-                    {% endif %}
+                    <!-- Start - End Date -->
+                    {{ job.position }}  |  {{ job.start_date }} - {{ job.end_date }}
                 </h3>
+                <a href="{{ job.url }}">{{ job.company }}</a>
+                
                 {% if job.summary %}
                 <p>{{ job.summary }}</p>
                 {% endif %}
-                <!-- Start - End Date -->
-                {% if job.start_date and job.end_date %}
-                    <p class="section-label">{{ job.start_date }} - {{ job.end_date }}</p>
-                {% endif %}
+                
                 <!-- Highlights -->
                 {% if job.highlights %}
                     <ul>
@@ -77,7 +76,7 @@
         <!-- Projects -->
         {% if projects %}
         <section>
-            <h2 class="section-heading">Projects</h2>
+            <h2>Projects</h2>
             {% for project in projects %}
             <section>
                 <!-- Project URL/Title -->
