@@ -1,14 +1,14 @@
 {
     "name": "Jordan Yiu",
     "headshot": "src/img/photos/headshot.jpg",
-    "resume": "src/YiuJordan_Resume_Large.pdf",
+    "resume": "src/YiuJordan_Resume.pdf",
     "contact": {
         "email": "yiu.work@proton.me",
         "location": "New Jersey/South Delaware",
         "svg_path": "jordanyiu.github.io/src/img/icons/email.svg"
     },
     "summary": {
-        "data": "Data Analyst experienced in data engineering, analysis, modeling (statistical and data), and application development. Problem solver and self-starter.",
+        "data": "Data Analyst experienced in data engineering, analysis, modeling (statistical and data), and application development.",
         "music": "Musician experienced in playing live music for orhcestra, musical pits, and private events. Music teacher with over 10 years experience teaching students of all skill levels, ranging from beginner and up to performing at Lincoln Center."
     },
 
@@ -22,11 +22,6 @@
             "label": "LinkedIn",
             "url": "https://www.linkedin.com/in/jordan-yiu-datacello27/",
             "svg_path": "src/img/icons/linkedin.svg"
-        },
-        {
-            "label": "Github",
-            "url": "https://github.com/JordanYiu",
-            "svg_path": "src/img/icons/github.svg"
         }
     ],
 
@@ -37,10 +32,10 @@
             "url": "https://www.masongross.rutgers.edu/mgsa-receives-largest-ever-gift/",
             "start_date": "04/01/2025",
             "end_date": "Present",
-            "summary": "Design, model, and deploy a database of schools across the United States for researchers to use in data analysis and survey design. ETL data from various public sources and develop processing layers. Interface with end-users to collect feedback to improve functionality and operations of the database.",
             "highlights": [
-                "Deploy database of schools across the United States.",
-                "ETL data for use in survey-design, applications, and analysis in research studies."
+                "Deploy a database of schools for researchers for survey sending, recording, and analysis. Resulting in reduced assistant hiring costs per semester.",
+                "Develop data pipelines through scripts and applications, increasing research efficiency by automating data processing.",
+                "Create adaptable strategies, frameworks, and documentation for data processing layers and automation."
             ]
         },
         {
@@ -51,9 +46,9 @@
             "end_date": "06/30/2024",
             "summary": "Act as a consultant on assignments across Penn Medicine and the wider University of Pennsylvania for the Director of Business Development's Office",
             "highlights": [
-                "Analyze data for the Environmental Innovations Initiative's Faculty Database. Credited under \"Acknowledgements\".",
-                "Process contact information to generate an invite list to Ambramson Cancer Center's Cellicon Valley 2023.",
-                "Identify collaborative business or research opportunities, create supporting documentation for tenure applications, and improve operations related to research."
+                "Benchmarked UPenn faculty publications to measure adherence to the United Nations’ Sustainable Development Goals in the Environmental Innovations Initiative - Faculty Database, interfacing with multiple teams and stakeholders to determine project requirements and KPI's.",
+                "Reduced administrative costs by approximately $20,000 for Cellicon Valley 2023 by utilizing healthcare data to build conference invite lists.",
+                "Conducted an analysis of the Hyperbaric Medicine Department’s website and social media statistics to increase marketing and recruitment KPI's. "
             ]
         },
         {
@@ -64,10 +59,8 @@
             "end_date": "Present",
             "summary": "Music teacher of cello, violin, viola, and piano throughout Central and parts of North New Jersey. Active musician for orchestras, small ensembles, musical pits, recordings, and private events ",
             "highlights": [
-                "Brook Arts Center (Brook Orchestra and Brook Arts Center Community Players)",
-                "Algonquin Arts Theatre",
-                "Count Basie Center for the Arts",
-                "Spring Lake Theatre"
+                "Freelance musician for orchestras, community theaters, and private events. Regularly perform at venues such as: Count Basie Theater, The Strand Theater, Algonquin Center for the Arts, and Brook Arts Center.",
+                "Experienced educator in proper technique for cello, violin, viola, and piano. Students have won competitions and auditions at Lincoln Center and Regions Orchestra auditions."
             ]
         }
     ],
